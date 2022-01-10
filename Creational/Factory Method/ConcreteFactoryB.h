@@ -9,7 +9,7 @@ public:
 	ConcreteFactoryB();
 	virtual ~ConcreteFactoryB();
 	
-	virtual AbstractProduct* create_product();
+	virtual AbstractProduct* factory_method();
 };
 
 #endif

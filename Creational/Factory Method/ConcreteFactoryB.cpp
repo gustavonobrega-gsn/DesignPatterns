@@ -9,7 +9,7 @@ ConcreteFactoryB::~ConcreteFactoryB()
 {
 }
 	
-AbstractProduct* ConcreteFactoryB::create_product()
+AbstractProduct* ConcreteFactoryB::factory_method()
 {
 	return new ConcreteProductB();
 };

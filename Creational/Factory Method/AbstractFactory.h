@@ -6,9 +6,10 @@
 class AbstractFactory 
 {
 public:
-	virtual ~AbstractFactory(){}	
+	virtual ~AbstractFactory();	
 	
-	virtual AbstractProduct* create_product() = 0;
+	virtual AbstractProduct* factory_method() = 0;
+	virtual void operation();
 };
 
 #endif
