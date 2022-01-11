@@ -33,4 +33,7 @@
 
 # IDE Stuff
 *.fpj
-/Debug/
+*.project
+*.cproject
+*.settings.*
+*.eclipse.*
