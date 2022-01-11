@@ -38,3 +38,9 @@
 *.settings.*
 *.eclipse.*
 /Debug/
+
+#images
+*.jpg
+
+#gitignore
+*.gitignore

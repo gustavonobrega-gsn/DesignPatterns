@@ -1,5 +1,5 @@
-#include "ConcreteFactoryB.h"
-#include "ConcreteProductB.h"
+#include "../inc/ConcreteFactoryB.h"
+#include "../inc/ConcreteProductB.h"
 
 ConcreteFactoryB::ConcreteFactoryB()
 {

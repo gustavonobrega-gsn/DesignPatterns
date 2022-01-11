@@ -1,5 +1,5 @@
-#include "ConcreteFactoryA.h"
-#include "ConcreteFactoryB.h"
+#include "../inc/ConcreteFactoryA.h"
+#include "../inc/ConcreteFactoryB.h"
 
 int main()
 {

@@ -1,4 +1,4 @@
-#include "AbstractFactory.h"
+#include "../inc/AbstractFactory.h"
 
 AbstractFactory::~AbstractFactory()
 {
