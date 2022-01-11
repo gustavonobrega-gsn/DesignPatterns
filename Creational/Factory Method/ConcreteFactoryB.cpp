@@ -9,7 +9,7 @@ ConcreteFactoryB::~ConcreteFactoryB()
 {
 }
 	
-AbstractProduct* ConcreteFactoryB::factory_method()
+AbstractProduct* ConcreteFactoryB::factory_method() const
 {
 	return new ConcreteProductB();
 };

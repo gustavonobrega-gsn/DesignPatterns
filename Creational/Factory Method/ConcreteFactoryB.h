@@ -10,7 +10,7 @@ public:
 	virtual ~ConcreteFactoryB();
 	
 private:
-	virtual AbstractProduct* factory_method() override;
+	virtual AbstractProduct* factory_method() const override;
 };
 
 #endif

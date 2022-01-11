@@ -5,7 +5,7 @@ AbstractFactory::~AbstractFactory()
 	
 }	
 
-void AbstractFactory::operation()
+void AbstractFactory::operation() const
 {
 	AbstractProduct* abst_product = factory_method();
 	abst_product->operation();

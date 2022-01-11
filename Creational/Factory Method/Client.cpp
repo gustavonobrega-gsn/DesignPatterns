@@ -3,7 +3,7 @@
 
 int main()
 {
-	AbstractFactory* abst_factory;
+	const AbstractFactory* abst_factory;
 	
 	abst_factory = new ConcreteFactoryA();
 	abst_factory->operation();

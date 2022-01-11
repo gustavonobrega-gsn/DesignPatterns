@@ -6,7 +6,7 @@ class AbstractProduct
 public:
 	virtual ~AbstractProduct(){}
 	
-	virtual void operation() = 0;
+	virtual void operation() const = 0;
 };
 
 #endif

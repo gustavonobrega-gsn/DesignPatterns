@@ -10,7 +10,7 @@ ConcreteProductB::~ConcreteProductB()
 {
 }
 
-void ConcreteProductB::operation()
+void ConcreteProductB::operation() const
 {
 	std::cout << "ProductB doing operation" << std::endl;
 }
