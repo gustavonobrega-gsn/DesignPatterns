@@ -1,5 +1,5 @@
-#ifndef CONCRETEPRODUCTA_H
-#define CONCRETEPRODUCTA_H
+#ifndef CONCRETEPRODUCTA_HPP
+#define CONCRETEPRODUCTA_HPP
 
 #include "AbstractProduct.hpp"
 

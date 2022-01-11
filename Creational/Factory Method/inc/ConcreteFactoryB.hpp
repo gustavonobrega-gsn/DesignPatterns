@@ -1,5 +1,5 @@
-#ifndef CONCRETEFACTORYB_H
-#define CONCRETEFACTORYB_H
+#ifndef CONCRETEFACTORYB_HPP
+#define CONCRETEFACTORYB_HPP
 
 #include "AbstractFactory.hpp"
 

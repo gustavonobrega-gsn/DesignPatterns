@@ -1,5 +1,5 @@
-#ifndef ABSTRACTPRODUCT_H
-#define ABSTRACTPRODUCT_H
+#ifndef ABSTRACTPRODUCT_HPP
+#define ABSTRACTPRODUCT_HPP
 
 class AbstractProduct
 {

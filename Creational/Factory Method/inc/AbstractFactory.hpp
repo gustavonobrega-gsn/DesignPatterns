@@ -1,5 +1,5 @@
-#ifndef ABSTRACTFACTORY_H
-#define ABSTRACTFACTORY_H
+#ifndef ABSTRACTFACTORY_HPP
+#define ABSTRACTFACTORY_HPP
 
 #include "AbstractProduct.hpp"
 
