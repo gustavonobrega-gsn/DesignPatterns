@@ -9,7 +9,8 @@ public:
 	ConcreteFactoryA();
 	virtual ~ConcreteFactoryA();
 	
-	virtual AbstractProduct* factory_method();
+private:
+	virtual AbstractProduct* factory_method() override;
 };
 
 #endif

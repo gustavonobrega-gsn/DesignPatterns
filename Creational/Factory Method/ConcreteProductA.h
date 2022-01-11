@@ -9,7 +9,7 @@ public:
 	ConcreteProductA();
 	virtual ~ConcreteProductA();
 	
-	virtual void operation();
+	virtual void operation() override;
 };
 
 #endif

@@ -8,8 +8,10 @@ class AbstractFactory
 public:
 	virtual ~AbstractFactory();	
 	
-	virtual AbstractProduct* factory_method() = 0;
 	virtual void operation();
+
+private:
+	virtual AbstractProduct* factory_method() = 0;
 };
 
 #endif
