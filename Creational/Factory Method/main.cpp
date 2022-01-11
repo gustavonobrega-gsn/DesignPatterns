@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "ConcreteFactoryA.h"
 #include "ConcreteFactoryB.h"
 

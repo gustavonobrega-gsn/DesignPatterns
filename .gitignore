@@ -37,3 +37,4 @@
 *.cproject
 *.settings.*
 *.eclipse.*
+/Debug/
