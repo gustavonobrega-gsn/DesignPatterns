@@ -1,4 +1,4 @@
-#include "../inc/ConcreteProductB.h"
+#include "../inc/ConcreteProductB.hpp"
 
 #include <iostream> 
 

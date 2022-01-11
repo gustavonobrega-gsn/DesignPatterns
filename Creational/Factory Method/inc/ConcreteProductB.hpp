@@ -1,7 +1,7 @@
 #ifndef CONCRETEPRODUCTB_H
 #define CONCRETEPRODUCTB_H
 
-#include "AbstractProduct.h"
+#include "AbstractProduct.hpp"
 
 class ConcreteProductB : public AbstractProduct
 {

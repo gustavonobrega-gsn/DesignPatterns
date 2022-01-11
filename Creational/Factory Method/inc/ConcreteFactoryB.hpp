@@ -1,7 +1,7 @@
 #ifndef CONCRETEFACTORYB_H
 #define CONCRETEFACTORYB_H
 
-#include "AbstractFactory.h"
+#include "AbstractFactory.hpp"
 
 class ConcreteFactoryB : public AbstractFactory
 {
