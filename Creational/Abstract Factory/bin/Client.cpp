@@ -1,5 +1,5 @@
-#include "../inc/ConcreteFactoryA.hpp"
-#include "../inc/ConcreteFactoryB.hpp"
+#include "../inc/ConcreteFactory1.hpp"
+#include "../inc/ConcreteFactory2.hpp"
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
 	const AbstractProductB* abst_b;
 	const AbstractProductC* abst_c;
 
-	abst_factory = new ConcreteFactoryA();
+	abst_factory = new ConcreteFactory1();
 
 	abst_a = abst_factory->createProductA();
 	abst_b = abst_factory->createProductB();
@@ -26,7 +26,7 @@ int main()
 	delete abst_factory;
 
 
-	abst_factory = new ConcreteFactoryB();
+	abst_factory = new ConcreteFactory2();
 
 	abst_a = abst_factory->createProductA();
 	abst_b = abst_factory->createProductB();

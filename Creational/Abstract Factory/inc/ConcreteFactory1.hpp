@@ -1,14 +1,14 @@
-#ifndef CONCRETEFACTORYA_HPP
-#define CONCRETEFACTORYA_HPP
+#ifndef CONCRETEFACTORY1_HPP
+#define CONCRETEFACTORY1_HPP
 
 #include "AbstractFactory.hpp"
 
-class ConcreteFactoryA : public AbstractFactory
+class ConcreteFactory1 : public AbstractFactory
 {
 public:
 
-	ConcreteFactoryA();
-	virtual ~ConcreteFactoryA();
+	ConcreteFactory1();
+	virtual ~ConcreteFactory1();
 
 	virtual AbstractProductA* createProductA() const override;
 	virtual AbstractProductB* createProductB() const override;
