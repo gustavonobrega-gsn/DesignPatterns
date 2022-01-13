@@ -4,13 +4,7 @@
 
 ProductProvider::ProductProvider()
 {
-    for(int i = 0 ; i < m_max_products ; i++)
-    {
-        m_product_pool.push_back(new Product());
 
-        std::cout << "Product created on address: " << m_product_pool[i] << std::endl;
-    }
-    std::cout << std::endl;
 }
 
 ProductProvider::~ProductProvider()
@@ -26,19 +20,18 @@ ProductProvider::~ProductProvider()
 
 Product* ProductProvider::get_product()
 {
-    if(!m_product_pool.empty())
+    if(m_product_pool.empty())
     {
-        Product* product = *(m_product_pool.begin());
-        m_product_pool.erase(m_product_pool.begin());
-
-        std::cout << "Giving Product whose address is : " << product << std::endl;
-
-        return product;
+    	m_product_pool.push_back(new Product());
+    	std::cout << "Product created on address: " << m_product_pool.back() << std::endl;
     }
 
-    std::cout << "Pool is empty" << std::endl;
+    Product* product = *(m_product_pool.begin());
+    m_product_pool.erase(m_product_pool.begin());
 
-    return nullptr;
+    std::cout << "Giving Product whose address is : " << product << std::endl;
+
+    return product;
 }
 
 void ProductProvider::return_product(Product*& product)
@@ -49,9 +42,4 @@ void ProductProvider::return_product(Product*& product)
 	    product = nullptr;
 	    std::cout << "Product is back, address is : " << m_product_pool.back() << std::endl;
     }
-}
-
-const int ProductProvider::get_max_product() const
-{
-	return m_max_products;
 }
