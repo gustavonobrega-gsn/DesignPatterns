@@ -8,3 +8,7 @@
 - [Singleton](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Creational/Singleton)
 - [Prototype](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Creational/Prototype)
 - [Object Pool](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Creational/Object%20Pool)
+
+[Structural](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural)
+
+- [Adapter](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Adapter)
