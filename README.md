@@ -12,3 +12,4 @@
 [Structural](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural)
 
 - [Adapter](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Adapter)
+- [Bridge](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Bridge)
