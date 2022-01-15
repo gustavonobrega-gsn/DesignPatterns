@@ -19,3 +19,4 @@
 - [Flyweight](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Flyweight)
 - [Proxy](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Proxy)
 - [Private Data Class](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Private%20Class%20Data)
+- [Pimpl](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Pimpl)
