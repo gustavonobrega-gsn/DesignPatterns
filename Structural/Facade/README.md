@@ -1,1 +1,1 @@
-![UML Class Diagram](https://user-images.githubusercontent.com/74929461/149620634-6ba90570-6607-460c-adac-d7db5666ed17.jpg)
+![UML Class Diagram](https://user-images.githubusercontent.com/74929461/149620779-bf11a129-7087-49a0-8e97-5871c10c8f98.jpg)
