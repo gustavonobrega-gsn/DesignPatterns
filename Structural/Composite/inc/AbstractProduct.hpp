@@ -1,5 +1,5 @@
-#ifndef INC_ABSTRACTPRODUCT_HPP
-#define INC_ABSTRACTPRODUCT_HPP
+#ifndef ABSTRACTPRODUCT_HPP
+#define ABSTRACTPRODUCT_HPP
 
 #include <string>
 
@@ -7,7 +7,7 @@ class AbstractProduct
 {
 public:
 
-	AbstractProduct(std::string name);
+	AbstractProduct(const std::string name);
 	virtual ~AbstractProduct();
 
 	virtual void operation(std::string str) const = 0;

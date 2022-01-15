@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-ConcreteProduct::ConcreteProduct(std::string name)
+ConcreteProduct::ConcreteProduct(const std::string name)
 :AbstractProduct{name}
 {
 
@@ -13,7 +13,7 @@ ConcreteProduct::~ConcreteProduct()
 	std::cout << "Deleting ConcreteProduct: " << get_name() << std::endl;
 }
 
-void ConcreteProduct::operation(std::string str) const
+void ConcreteProduct::operation(const std::string str) const
 {
 	std::cout << str  << get_name() << std::endl;
 }

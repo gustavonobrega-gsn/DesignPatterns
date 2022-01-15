@@ -6,10 +6,10 @@
 class ConcreteProduct : public AbstractProduct
 {
 public:
-	ConcreteProduct(std::string name);
+	ConcreteProduct(const std::string name);
 	virtual ~ConcreteProduct();
 
-	void operation(std::string str) const override;
+	void operation(const std::string str) const override;
 };
 
 #endif

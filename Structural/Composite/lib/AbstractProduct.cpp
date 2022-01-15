@@ -1,6 +1,6 @@
 #include "../inc/AbstractProduct.hpp"
 
-AbstractProduct::AbstractProduct(std::string name)
+AbstractProduct::AbstractProduct(const std::string name)
 :m_name(name)
 {
 
