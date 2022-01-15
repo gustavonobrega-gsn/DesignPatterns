@@ -3,8 +3,9 @@
 #include <iostream>
 
 Product::Product(const int id, const int value)
+:m_product_data(new ProductData(id, value))
 {
-	m_product_data = new ProductData(id, value);
+
 }
 
 Product::~Product()
