@@ -17,3 +17,4 @@
 - [Decorator](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Decorator)
 - [Facade](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Facade)
 - [Flyweight](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Flyweight)
+- [Proxy](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Proxy)
