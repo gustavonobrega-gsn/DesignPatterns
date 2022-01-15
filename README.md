@@ -18,3 +18,4 @@
 - [Facade](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Facade)
 - [Flyweight](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Flyweight)
 - [Proxy](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Proxy)
+- [Private Data Class](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Private%20Data%20Class)
