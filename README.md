@@ -15,3 +15,4 @@
 - [Bridge](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Bridge)
 - [Composite](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Composite)
 - [Decorator](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Decorator)
+- [Facade](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Facade)
