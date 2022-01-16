@@ -20,3 +20,7 @@
 - [Proxy](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Proxy)
 - [Private Data Class](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Private%20Class%20Data)
 - [Pimpl](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Structural/Pimpl)
+
+[Behavioral](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral)
+
+- [Chain of Responsability](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Chain%20of%20Responsability)
