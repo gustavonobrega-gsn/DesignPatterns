@@ -3,8 +3,9 @@
 #include <iostream>
 
 AbstractProductHandler::AbstractProductHandler()
+:m_next_product_handler(nullptr)
 {
-	m_next_product_handler = nullptr;
+
 }
 
 AbstractProductHandler::~AbstractProductHandler()
