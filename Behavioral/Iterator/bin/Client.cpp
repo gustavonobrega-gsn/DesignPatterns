@@ -13,39 +13,49 @@ int main()
 	abstract_collection_int->add(6);
 	abstract_collection_int->add(7);
 
-	AbstractIterator<int>* abstract_iterator_int = abstract_collection_int->create_Iterator();
+	AbstractIterator<int>* abstract_iterator_int =     abstract_collection_int->begin();
+	AbstractIterator<int>* abstract_iterator_int_end = abstract_collection_int->end();
 
-	for(abstract_iterator_int->reset() ; !abstract_iterator_int->ended() ; abstract_iterator_int->next())
+	for( ; *abstract_iterator_int != *abstract_iterator_int_end ; (*abstract_iterator_int)++)
 	{
 		std::cout << "int: " << abstract_iterator_int->get() << std::endl;
 	}
 
+	delete abstract_collection_int;
+	delete abstract_iterator_int;
+	delete abstract_iterator_int_end;
+
+
+
 
 	AbstractCollection<Product*>* abstract_collection_product = new ConcreteCollection<Product*>();
 
-	abstract_collection_product->add(new Product());
-	abstract_collection_product->add(new Product());
-	abstract_collection_product->add(new Product());
+	Product* product1 = new Product();
+	Product* product2 = new Product();
+	Product* product3 = new Product();
 
-	AbstractIterator<Product*>* abstract_iterator_product = abstract_collection_product->create_Iterator();
+	abstract_collection_product->add(product1);
+	abstract_collection_product->add(product2);
+	abstract_collection_product->add(product3);
 
-	for(abstract_iterator_product->reset() ; !abstract_iterator_product->ended() ; abstract_iterator_product->next())
+	AbstractIterator<Product*>* abstract_iterator_product =     abstract_collection_product->begin();
+	AbstractIterator<Product*>* abstract_iterator_product_end = abstract_collection_product->end();
+
+	for( ; *abstract_iterator_product != *abstract_iterator_product_end ; (*abstract_iterator_product)++)
 	{
 		std::cout << "Product: " << abstract_iterator_product->get() << std::endl;
 	}
 
 
-
-	delete abstract_collection_int;
-	delete abstract_iterator_int;
-
-	for(abstract_iterator_product->reset() ; !abstract_iterator_product->ended() ; abstract_iterator_product->next())
+	for(abstract_iterator_product->reset() ; *abstract_iterator_product != *abstract_iterator_product_end ; (*abstract_iterator_product)++)
 	{
+		std::cout << "Deleted Product: " << abstract_iterator_product->get() << std::endl;
 		delete abstract_iterator_product->get();
 	}
 
 	delete abstract_collection_product;
 	delete abstract_iterator_product;
+	delete abstract_iterator_product_end;
 
 
 	return 0;

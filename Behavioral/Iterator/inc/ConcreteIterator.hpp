@@ -4,13 +4,15 @@
 #include "AbstractIterator.hpp"
 #include "AbstractCollection.hpp"
 
+#include <iostream>
+
 template <class T>
 class ConcreteIterator : public AbstractIterator<T>
 {
 public:
 
-	ConcreteIterator(AbstractCollection<T>* abstract_collection)
-	:m_abstract_collection(abstract_collection),m_current_index(0)
+	ConcreteIterator(AbstractCollection<T>* abstract_collection, int index)
+	:m_abstract_collection(abstract_collection),m_current_index(index)
 	{
 
 	}
@@ -20,29 +22,32 @@ public:
 
 	}
 
+	void operator++(const int value) override
+	{
+		m_current_index++;
+	}
+
+	bool operator!=(const AbstractIterator<T>& abstract_iterator) override
+	{
+		const ConcreteIterator<T>* concrete_iterator = dynamic_cast<const ConcreteIterator<T>*>(&abstract_iterator);
+
+		if(concrete_iterator == nullptr)
+		{
+			return false;
+		}
+
+		return ( (m_abstract_collection != concrete_iterator->m_abstract_collection) || (m_current_index != concrete_iterator->m_current_index) );
+	}
+
 	void reset() override
 	{
 		m_current_index = 0;
 	}
 
-	void next() override
-	{
-		if(!ended())
-		{
-			m_current_index++;
-		}
-	}
-
 	T get() const override
 	{
-		return m_abstract_collection->get_at(m_current_index);
+		return m_abstract_collection->at(m_current_index);
 	}
-
-	bool ended() const override
-	{
-		return m_current_index >= m_abstract_collection->get_size();
-	}
-
 
 private:
 

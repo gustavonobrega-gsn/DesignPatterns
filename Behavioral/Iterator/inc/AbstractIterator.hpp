@@ -8,10 +8,11 @@ public:
 
 	virtual ~AbstractIterator(){}
 
+	virtual void operator++(const int value) = 0;
+	virtual bool operator!=(const AbstractIterator<T>& abstract_iterator) = 0;
+
 	virtual void reset() = 0;
-	virtual void next() = 0;
 	virtual T get() const = 0;
-	virtual bool ended() const = 0;
 
 };
 

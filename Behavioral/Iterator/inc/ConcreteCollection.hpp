@@ -21,24 +21,29 @@ public:
 
 	}
 
-	AbstractIterator<T>* create_Iterator() override
-	{
-		return new ConcreteIterator<T>(this);
-	}
-
 	void add(T t) override
 	{
 		m_elements.push_back(t);
 	}
 
-	T get_at(int index) const override
+	T at(int index) const override
 	{
 		return m_elements.at(index);
 	}
 
-	int get_size() const override
+	int size() const override
 	{
 		return m_elements.size();
+	}
+
+	AbstractIterator<T>* begin() override
+	{
+		return new ConcreteIterator<T>(this,0);
+	}
+
+	AbstractIterator<T>* end() override
+	{
+		return new ConcreteIterator<T>(this,size());
 	}
 
 private:

@@ -25,3 +25,4 @@
 
 - [Chain of Responsability](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Chain%20of%20Responsability)
 - [Command](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Command)
+- [Iterator](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Iterator)

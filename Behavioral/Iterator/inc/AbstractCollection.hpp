@@ -10,10 +10,13 @@ public:
 
 	virtual ~AbstractCollection(){}
 
-	virtual AbstractIterator<T>* create_Iterator() = 0;
 	virtual void add(T t) = 0;
-	virtual T get_at(int index) const = 0;
-	virtual int get_size() const = 0;
+	virtual T at(int index) const = 0;
+	virtual int size() const = 0;
+
+	virtual AbstractIterator<T>* begin() = 0;
+	virtual AbstractIterator<T>* end() = 0;
+
 
 };
 
