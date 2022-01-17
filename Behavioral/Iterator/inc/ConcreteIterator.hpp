@@ -33,7 +33,7 @@ public:
 
 		if(concrete_iterator == nullptr)
 		{
-			return false;
+			return true;
 		}
 
 		return ( (m_abstract_collection != concrete_iterator->m_abstract_collection) || (m_current_index != concrete_iterator->m_current_index) );
