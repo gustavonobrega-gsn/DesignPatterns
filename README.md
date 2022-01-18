@@ -27,3 +27,4 @@
 - [Command](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Command)
 - [Iterator](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Iterator)
 - [Interpreter](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Interpreter)
+- [Mediator](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Mediator)
