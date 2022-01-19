@@ -1,7 +1,6 @@
 #include "../inc/AbstractState.hpp"
 
-AbstractState::AbstractState(Context* context)
-:m_context(context)
+AbstractState::AbstractState()
 {
 
 }
@@ -9,4 +8,9 @@ AbstractState::AbstractState(Context* context)
 AbstractState::~AbstractState()
 {
 
+}
+
+void AbstractState::set_context(Context* context)
+{
+	m_context = context;
 }

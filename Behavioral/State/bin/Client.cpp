@@ -1,8 +1,11 @@
 #include "../inc/Context.hpp"
+#include "../inc/ConcreteStateA.hpp"
 
 int main()
 {
-	Context context;
+
+	AbstractState* abstract_state = new ConcreteStateA();
+	Context context(abstract_state);
 
 	context.operation();
 	context.operation();

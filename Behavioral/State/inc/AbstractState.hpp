@@ -7,9 +7,10 @@ class AbstractState
 {
 public:
 
-	explicit AbstractState(Context* context);
+	explicit AbstractState();
 	virtual ~AbstractState();
 
+	virtual void set_context(Context* context);
 	virtual void operation() const = 0;
 
 protected:

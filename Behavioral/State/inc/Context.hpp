@@ -7,7 +7,7 @@ class Context
 {
 public:
 
-	Context();
+	Context(AbstractState* const abstract_state);
 	virtual ~Context();
 
 	void set_state(AbstractState* const abstract_state);

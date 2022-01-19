@@ -7,7 +7,7 @@ class ConcreteStateA : public AbstractState
 {
 public:
 
-	explicit ConcreteStateA(Context* context);
+	explicit ConcreteStateA();
 	virtual ~ConcreteStateA();
 
 	virtual void operation() const override;

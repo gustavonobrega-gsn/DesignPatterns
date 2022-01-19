@@ -1,10 +1,9 @@
 #include "../inc/Context.hpp"
-#include "../inc/ConcreteStateA.hpp"
 
-Context::Context()
-:m_abstract_state(new ConcreteStateA(this))
+Context::Context(AbstractState* const abstract_state)
+:m_abstract_state(abstract_state)
 {
-
+	m_abstract_state->set_context(this);
 }
 
 Context::~Context()
@@ -16,6 +15,7 @@ void Context::set_state(AbstractState* const abstract_state)
 {
 	delete m_abstract_state;
 	m_abstract_state = abstract_state;
+	m_abstract_state->set_context(this);
 }
 
 void Context::operation() const
