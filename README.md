@@ -30,3 +30,4 @@
 - [Mediator](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Mediator)
 - [Memento](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Memento)
 - [Observer](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Observer)
+- [State](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/State)
