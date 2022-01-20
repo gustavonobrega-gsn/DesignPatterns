@@ -33,3 +33,4 @@
 - [State](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/State)
 - [Strategy](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Strategy)
 - [Template Method](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Template%20Method)
+- [Visitor](https://github.com/gustavonobrega-gsn/DesignPatterns/tree/main/Behavioral/Visitor)
