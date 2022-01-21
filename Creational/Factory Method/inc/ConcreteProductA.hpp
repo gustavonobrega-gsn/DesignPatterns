@@ -6,10 +6,12 @@
 class ConcreteProductA : public AbstractProduct
 {
 public:
+
 	ConcreteProductA();
 	virtual ~ConcreteProductA();
 	
 	virtual void operation() const override;
+
 };
 
 #endif

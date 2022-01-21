@@ -4,10 +4,12 @@
 
 ConcreteProductB::ConcreteProductB()
 {
+
 }
 
 ConcreteProductB::~ConcreteProductB()
 {
+
 }
 
 void ConcreteProductB::operation() const

@@ -1,16 +1,17 @@
 #include "../inc/ConcreteFactoryB.hpp"
-
 #include "../inc/ConcreteProductB.hpp"
 
 ConcreteFactoryB::ConcreteFactoryB()
 {
+
 }
 
 ConcreteFactoryB::~ConcreteFactoryB()
 {
+
 }
 	
-AbstractProduct* ConcreteFactoryB::factory_method() const
+std::shared_ptr<AbstractProduct> ConcreteFactoryB::factory_method() const
 {
-	return new ConcreteProductB();
+	return std::make_shared<ConcreteProductB>();
 };

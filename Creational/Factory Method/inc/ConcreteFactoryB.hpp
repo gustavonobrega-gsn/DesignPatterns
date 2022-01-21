@@ -6,11 +6,13 @@
 class ConcreteFactoryB : public AbstractFactory
 {
 public:
+
 	ConcreteFactoryB();
 	virtual ~ConcreteFactoryB();
 	
 private:
-	virtual AbstractProduct* factory_method() const override;
+	virtual std::shared_ptr<AbstractProduct> factory_method() const override;
+
 };
 
 #endif
