@@ -15,7 +15,7 @@ public:
 
 private:
 
-	virtual std::shared_ptr<AbstractProduct> factory_method() const = 0;
+	virtual std::unique_ptr<AbstractProduct> factory_method() const = 0;
 
 };
 

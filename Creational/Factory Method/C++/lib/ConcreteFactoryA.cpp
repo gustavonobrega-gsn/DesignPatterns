@@ -11,7 +11,7 @@ ConcreteFactoryA::~ConcreteFactoryA()
 
 }
 	
-std::shared_ptr<AbstractProduct> ConcreteFactoryA::factory_method() const
+std::unique_ptr<AbstractProduct> ConcreteFactoryA::factory_method() const
 {
-	return std::make_shared<ConcreteProductA>();
+	return std::unique_ptr<AbstractProduct>(new ConcreteProductA());
 };

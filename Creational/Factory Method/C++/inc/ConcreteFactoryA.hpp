@@ -11,8 +11,7 @@ public:
 	virtual ~ConcreteFactoryA();
 	
 private:
-
-	virtual std::shared_ptr<AbstractProduct> factory_method() const override;
+	virtual std::unique_ptr<AbstractProduct> factory_method() const override;
 
 };
 
