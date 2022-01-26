@@ -5,15 +5,17 @@
 #include "AbstractProductB.hpp"
 #include "AbstractProductC.hpp"
 
+#include <memory>
+
 class AbstractFactory
 {
 public:
 
 	virtual ~AbstractFactory(){}
 
-	virtual AbstractProductA* createProductA() const = 0;
-	virtual AbstractProductB* createProductB() const = 0;
-	virtual AbstractProductC* createProductC() const = 0;
+	virtual std::unique_ptr<AbstractProductA> createProductA() const = 0;
+	virtual std::unique_ptr<AbstractProductB> createProductB() const = 0;
+	virtual std::unique_ptr<AbstractProductC> createProductC() const = 0;
 };
 
 #endif

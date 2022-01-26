@@ -10,9 +10,9 @@ public:
 	ConcreteFactory1();
 	virtual ~ConcreteFactory1();
 
-	virtual AbstractProductA* createProductA() const override;
-	virtual AbstractProductB* createProductB() const override;
-	virtual AbstractProductC* createProductC() const override;
+	virtual std::unique_ptr<AbstractProductA> createProductA() const override;
+	virtual std::unique_ptr<AbstractProductB> createProductB() const override;
+	virtual std::unique_ptr<AbstractProductC> createProductC() const override;
 };
 
 #endif

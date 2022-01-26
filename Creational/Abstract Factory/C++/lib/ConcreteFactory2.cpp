@@ -14,17 +14,17 @@ ConcreteFactory2::~ConcreteFactory2()
 
 }
 
-AbstractProductA* ConcreteFactory2::createProductA() const
+std::unique_ptr<AbstractProductA> ConcreteFactory2::createProductA() const
 {
-	return new ConcreteProductA_2();
+	return std::unique_ptr<AbstractProductA>(new ConcreteProductA_2());
 }
 
-AbstractProductB* ConcreteFactory2::createProductB() const
+std::unique_ptr<AbstractProductB> ConcreteFactory2::createProductB() const
 {
-	return new ConcreteProductB_2();
+	return std::unique_ptr<AbstractProductB>(new ConcreteProductB_2());
 }
 
-AbstractProductC* ConcreteFactory2::createProductC() const
+std::unique_ptr<AbstractProductC> ConcreteFactory2::createProductC() const
 {
-	return new ConcreteProductC_2();
+	return std::unique_ptr<AbstractProductC>(new ConcreteProductC_2());
 }
