@@ -1,0 +1,5 @@
+interface AbstractProductC {
+
+    fun operationC()
+
+}

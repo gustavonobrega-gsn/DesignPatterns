@@ -1,0 +1,5 @@
+interface AbstractProductA {
+
+    fun operationA()
+
+}
