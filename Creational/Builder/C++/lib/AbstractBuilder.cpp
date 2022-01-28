@@ -5,7 +5,7 @@ AbstractBuilder::~AbstractBuilder()
 
 }
 
-AbstractProduct* AbstractBuilder::get_product() const
+std::shared_ptr<AbstractProduct> AbstractBuilder::get_product() const
 {
 	return m_product;
 }

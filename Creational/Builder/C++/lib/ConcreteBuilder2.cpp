@@ -13,7 +13,7 @@ ConcreteBuilder2::~ConcreteBuilder2()
 
 void ConcreteBuilder2::reset()
 {
-	m_product = new ConcreteProduct2();
+	m_product = std::make_shared<ConcreteProduct2>();
 }
 
 void ConcreteBuilder2::build_step_a()

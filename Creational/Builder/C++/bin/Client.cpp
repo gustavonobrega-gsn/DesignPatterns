@@ -4,10 +4,10 @@
 
 int main()
 {
-	AbstractBuilder* abst_builder;
-	AbstractProduct* abst_prod;
+	std::unique_ptr<AbstractBuilder> abst_builder;
+	std::shared_ptr<AbstractProduct> abst_prod;
 
-	abst_builder = new ConcreteBuilder1();
+	abst_builder = std::unique_ptr<AbstractBuilder>(new ConcreteBuilder1());
 	abst_builder->reset();
 	abst_builder->build_step_a();
 	abst_builder->build_step_b();
@@ -16,11 +16,9 @@ int main()
 	abst_prod = abst_builder->get_product();
 	abst_prod->operation();
 
-	delete abst_prod;
-	delete abst_builder;
 
 
-	abst_builder = new ConcreteBuilder2();
+	abst_builder.reset(new ConcreteBuilder2());
 	abst_builder->reset();
 	abst_builder->build_step_a();
 	abst_builder->build_step_c();
@@ -28,8 +26,6 @@ int main()
 	abst_prod = abst_builder->get_product();
 	abst_prod->operation();
 
-	delete abst_prod;
-	delete abst_builder;
 
 	return 0;
 }
