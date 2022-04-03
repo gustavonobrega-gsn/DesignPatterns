@@ -6,6 +6,6 @@ import (
 
 type ConcreteProductB struct{}
 
-func (concreteProductB *ConcreteProductB) operation() {
+func (*ConcreteProductB) operation() {
 	fmt.Println("ProductB doing operation")
 }

@@ -4,7 +4,7 @@ type ConcreteFactoryB struct{
 
 }
 
-func (concreteFactoryB ConcreteFactoryB) factoryMethod() AbstractProduct{
+func (ConcreteFactoryB) factoryMethod() AbstractProduct{
 	return &ConcreteProductB{}
 }
 
